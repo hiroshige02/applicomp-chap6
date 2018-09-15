@@ -36,14 +36,6 @@ ActiveRecord::Schema.define(version: 2018_09_12_030349) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "postacomments", force: :cascade do |t|
-    t.text "comment"
-    t.integer "user_id"
-    t.integer "post_image_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
